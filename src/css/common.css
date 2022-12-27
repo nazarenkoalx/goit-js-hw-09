@@ -16,3 +16,24 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.timer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.field {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  background-color: teal;
+  border-radius: 2px;
+  padding: 10px;
+}
+.value {
+  color: #fff;
+  text-align: center;
+}
+.label {
+  color: #fff;
+}

@@ -9,6 +9,7 @@ const minutesSpan = document.querySelector('span[data-minutes]');
 const hoursSpan = document.querySelector('span[data-hours]');
 const daysSpan = document.querySelector('span[data-days]');
 let time = null;
+startBtn.setAttribute('disabled', true);
 startBtn.addEventListener('click', onClick);
 
 const options = {
@@ -19,7 +20,6 @@ const options = {
   onClose(selectedDates) {
     if (selectedDates[0] < options.defaultDate) {
       Notiflix.Notify.failure('Please choose a date in the future');
-      startBtn.setAttribute('disabled', true);
     } else {
       startBtn.removeAttribute('disabled');
     }
