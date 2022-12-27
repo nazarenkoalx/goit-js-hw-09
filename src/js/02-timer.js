@@ -28,7 +28,7 @@ const options = {
 };
 
 function onClick() {
-  timerId = setInterval(() => {
+  let timerId = setInterval(() => {
     if (Date.now() >= time) {
       clearInterval(timerId);
       return;
